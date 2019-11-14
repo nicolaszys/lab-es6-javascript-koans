@@ -58,7 +58,6 @@ describe('`const` is like `let` plus read-only. ', () => {
   });
 
   /*var, let or const? notChangeable = 23;*/
-
   it('const scope leaks too', () => {
     //expect(notChangeable).toBe(23);
   });
@@ -67,12 +66,16 @@ describe('`const` is like `let` plus read-only. ', () => {
 
     it('arrays is not fully read-only', () => {
       const arr = [42, 23];
+      
+      /* You should add your code in here */
 
       //expect(arr[0]).toBe(0);
     });
 
     it('objects are not fully read-only', () => {
       const obj = {x: 1};
+      
+      /* You should add your code in here */
 
       //expect(obj.x).toBe(2);
     });
@@ -243,12 +246,6 @@ describe('destructuring arrays makes shorter code. ', () => {
 
     const expected = 'Some One = 23 years';
     //expect(`${firstName} ${surname} = ${age} years`).toEqual(expected);
-  });
-
-  it('chained assignments', () => {
-    let c, d;
-    // let a, b = c, d = [1, 2];
-    //expect([a, b, c, d]).toEqual([1, 2, 1, 2]);
   });
 
 });
